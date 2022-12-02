@@ -1,0 +1,44 @@
+
+* {
+  background-color: darkgrey;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3vw;
+  border: 5px solid red;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+
+
+/* Figure Styling */
+
+figure {
+  width: 50%;
+  /* width: 900px; */
+  margin: auto;
+  border: 5px solid black;
+  background-color: pink;
+  padding: 50px;
+}
+
+figcaption {
+  background-color: inherit;
+}
+
+
+img {
+  width: 100%
+}
+
+/* Text styling  */
+
+p {
+  font-size: 2.5vw;
+  font-family: 'Dancing Script', cursive;
+}
+
+
