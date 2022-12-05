@@ -32,7 +32,7 @@ function randomAge(min,max){
 
 // *********** OBJECT LITERALS ****************
 
-
+// **** HELPFUL FOR START OF YOUR LAB *****
 let seattle = {
   name: 'Seattle',
   minCust: 23,
@@ -93,7 +93,94 @@ let frankie = {
 };
 
 
+let jumper = {
+  name: 'Jumper',
+  age: 0,
+  interests: ['dry food', 'fish toy', 'treats'],
+  isGoodWithCats: true,
+  isGoodWithDogs: true,
+  isGoodWithKids: true,
+  photo: 'img/jumper.jpeg',
+  getAge: function () {
+    this.age = randomAge(3, 12);
+  },
+  render: function () {
+    // ******** DOM MANIPULATION ********
+
+    let articleElem = document.createElement('article');
+    kittenSection.appendChild(articleElem);
+
+    let h2Elem = document.createElement('h2');
+    h2Elem.textContent = this.name;
+    articleElem.appendChild(h2Elem);
+
+    let pElem = document.createElement('p');
+    pElem.textContent = `${this.name} is ${this.age} months`;
+    articleElem.appendChild(pElem);
+
+    let ulElem = document.createElement('ul');
+    articleElem.appendChild(ulElem);
+
+    for (let i = 0; i < this.interests.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = this.interests[i];
+      ulElem.appendChild(liElem);
+    }
+
+    let imgElem = document.createElement('img');
+    imgElem.src = this.photo;
+    imgElem.alt = `${this.name} is an adorable ${this.age} month old kitten.`;
+    articleElem.appendChild(imgElem);
+  }
+};
+
+let serena = {
+  name: 'Serena',
+  age: 0,
+  interests: ['mice', 'lasers', 'scratching'],
+  isGoodWithCats: false,
+  isGoodWithDogs: false,
+  isGoodWithKids: true,
+  photo: 'img/serena.jpeg',
+  getAge: function () {
+    this.age = randomAge(3, 12);
+  },
+  render: function () {
+    // ******** DOM MANIPULATION ********
+
+    let articleElem = document.createElement('article');
+    kittenSection.appendChild(articleElem);
+
+    let h2Elem = document.createElement('h2');
+    h2Elem.textContent = this.name;
+    articleElem.appendChild(h2Elem);
+
+    let pElem = document.createElement('p');
+    pElem.textContent = `${this.name} is ${this.age} months`;
+    articleElem.appendChild(pElem);
+
+    let ulElem = document.createElement('ul');
+    articleElem.appendChild(ulElem);
+
+    for (let i = 0; i < this.interests.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = this.interests[i];
+      ulElem.appendChild(liElem);
+    }
+
+    let imgElem = document.createElement('img');
+    imgElem.src = this.photo;
+    imgElem.alt = `${this.name} is an adorable ${this.age} month old kitten.`;
+    articleElem.appendChild(imgElem);
+  }
+};
+
+
 // ********** EXECUTABLE CODE ****************
 frankie.getAge();
 frankie.render();
+jumper.getAge();
+jumper.render();
+serena.getAge();
+serena.render();
 console.log(frankie);
