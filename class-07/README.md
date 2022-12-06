@@ -1,6 +1,13 @@
 # Object-Oriented Programming with Constructor Functions: HTML Tables
 
-## Overview 
+## IN CLASS NOTES AND TAKE AWAYS
+
+- [LECTURE NOTES](lecture-notes.md)
+- [CONSTRUCTOR REPLIT](https://replit.com/@arpatterson31/CLASS-201D93-CONSTRUCTORS#index.js)
+- [CODE REVIEW](inclass-demo/js/sales.js)
+- [INCLASS DEMO - KITTIES WITH CONSTRUCTOR](inclass-demo/js/app.js)
+
+## Overview
 
 This class will introduce inheritance with constructor functions, plus adding another dimension to dynamic DOM rendering by creating a table instead of lists from stored array data.
 
