@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms and Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Events: boxes and forms</h1>
+  </header>
+  <main>
+
+    <form id="my-form">
+      <fieldset>
+        <legend>Fieldset Header</legend>
+
+        <!-- INPUTS AND LABELS - 2 OPTIONS -->
+
+        <!-- OPTION 1: IS TO HAVE YOUR INPUT AND LABEL AS SIBLINGS
+            IMPORTANT YOU MUST HAVE A "FOR" ATTRIBUTE ON YOUR LABEL &
+            A "ID" ON YOUR INPUT - MUST BE THE SAME!!!!!
+        -->
+        <label for="userName">Name: </label>
+        <input name="userName" type="text" id="userName" placeholder="ex. John Smith">
+        <!-- event.target.userName.value -->
+
+
+        <!-- OPTION 2: NEST YOUR INPUT IN YOUR LABEL -->
+        <label>Age:
+          <input type="number" name="age">
+          <!-- event.target.age.value -->
+        </label>
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="housewives">What is your favorite Housewives Franchise?</label>
+        <select name="housewives" id="housewives">
+          <option value="bh">Beverly Hills</option>
+          <option value="slc">Salt Lake City</option>
+          <option value="none">None</option>
+        </select>
+
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- <section id="container">
+      <h3>Click on a box below</h3>
+
+      <article id="box-one">Box 1</article>
+      <article id="box-two">Box 2</article>
+      <article id="box-three">Box 3</article>
+      <section id="results"></section>
+    </section> -->
+
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
